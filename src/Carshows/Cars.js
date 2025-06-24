@@ -1,0 +1,45 @@
+import React from 'react'
+
+const Cars = () => {
+    const data=[
+        { carname: "Porsche 911", model: "Carrera S", price: 113000, descripotion:"Porsche is a German luxury and sports car manufacturer renowned for producing high-performance vehicles. Founded in 1931 by Ferdinand Porsche, the company is best known for its iconic Porsche 911, a car that has become a symbol of precision engineering and timeless design", path: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmUMJuz4gUo4hVwfPNrpvKDdSxk8TU_9_IIrKl5GvWw23sjj0Yc7DbquN75MFHAtL0Frs&usqp=CAU" },
+        { carname: "Porsche 911", model: "Turbo", price: 150000, descripotion:"In addition to cars, Porsche has a rich history in motorsports, achieving numerous victories in events like the 24 Hours of Le Mans. The brand continues to evolve, focusing on electric mobility and sustainability, while maintaining its legacy of delivering driving excellence.", path: "https://i.ytimg.com/vi/_azYX6UKNxY/sddefault.jpg" },
+        { carname: "Porsche 911", model: "GT3", price: 160000, descripotion:"Porsche is a German luxury and sports car manufacturer renowned for producing high-performance vehicles. Founded in 1931 by Ferdinand Porsche, the company is best known for its iconic Porsche 911, a car that has become a symbol of precision engineering and timeless design", path: "https://wallpapers.com/images/high/black-porsche-911-in-the-city-d2izvvw8xef5n5gi.webp" },
+        { carname: "Porsche Taycan", model: "4S", price: 103000, descripotion:"In addition to cars, Porsche has a rich history in motorsports, achieving numerous victories in events like the 24 Hours of Le Mans. The brand continues to evolve, focusing on electric mobility and sustainability, while maintaining its legacy of delivering driving excellence.", path: "https://wallpapers.com/images/hd/high-speed-luxury-the-porsche-taycan-oan3lp5wt5zzz25b.jpg" },
+        { carname: "Porsche Taycan", model: "Turbo", price: 140000, descripotion:"Porsche is a German luxury and sports car manufacturer renowned for producing high-performance vehicles. Founded in 1931 by Ferdinand Porsche, the company is best known for its iconic Porsche 911, a car that has become a symbol of precision engineering and timeless design", path: "https://i.ytimg.com/vi/lPalENhxBb4/maxresdefault.jpg" },
+        { carname: "Porsche Macan", model: "Base", price: 55000, descripotion:"In addition to cars, Porsche has a rich history in motorsports, achieving numerous victories in events like the 24 Hours of Le Mans. The brand continues to evolve, focusing on electric mobility and sustainability, while maintaining its legacy of delivering driving excellence.", path: "https://c4.wallpaperflare.com/wallpaper/641/500/857/porsche-porsche-macan-blue-car-car-wallpaper-preview.jpg" },
+        { carname: "Porsche Macan", model: "S", price: 65000, descripotion:"Porsche is a German luxury and sports car manufacturer renowned for producing high-performance vehicles. Founded in 1931 by Ferdinand Porsche, the company is best known for its iconic Porsche 911, a car that has become a symbol of precision engineering and timeless design", path: "https://www.hdwallpapers.in/download/porsche_macan_t_car_2022_4_4k_hd_cars-2560x1440.jpg" },
+        { carname: "Porsche Macan", model: "Turbo", price: 75000, descripotion:"In addition to cars, Porsche has a rich history in motorsports, achieving numerous victories in events like the 24 Hours of Le Mans. The brand continues to evolve, focusing on electric mobility and sustainability, while maintaining its legacy of delivering driving excellence.", path: "https://images5.alphacoders.com/729/729653.jpg" },
+         { carname: "Porsche Cayenne", model: "Base", price: 67000,  descripotion:"Porsche is a German luxury and sports car manufacturer renowned for producing high-performance vehicles. Founded in 1931 by Ferdinand Porsche, the company is best known for its iconic Porsche 911, a car that has become a symbol of precision engineering and timeless design", path: "https://germanauto.co.uk/wp-content/uploads/2021/07/Featured-Image-Porsche.png" },
+        { carname: "Porsche Cayenne", model: "Turbo", price: 95000, descripotion:"In addition to cars, Porsche has a rich history in motorsports, achieving numerous victories in events like the 24 Hours of Le Mans. The brand continues to evolve, focusing on electric mobility and sustainability, while maintaining its legacy of delivering driving excellence.", path: "https://www.porschefairfield.com/blogs/3561/wp-content/uploads/2024/12/08-19.jpg" },
+        { carname: "Porsche Cayenne", model: "Coupe", price: 80000, descripotion:"Porsche is a German luxury and sports car manufacturer renowned for producing high-performance vehicles. Founded in 1931 by Ferdinand Porsche, the company is best known for its iconic Porsche 911, a car that has become a symbol of precision engineering and timeless design", path: "https://media.ed.edmunds-media.com/porsche/cayenne/2019/oem/2019_porsche_cayenne_4dr-suv_base_rq_oem_8_815.jpg" },
+        { carname: "Porsche 718", model: "Boxster", price: 60000, descripotion:"In addition to cars, Porsche has a rich history in motorsports, achieving numerous victories in events like the 24 Hours of Le Mans. The brand continues to evolve, focusing on electric mobility and sustainability, while maintaining its legacy of delivering driving excellence.", path: "https://i.pinimg.com/736x/fa/bd/b2/fabdb2678d7a91d4fce871e57c6373a8.jpg" },
+        { carname: "Porsche 718", model: "Cayman", price: 65000,descripotion:"Porsche is a German luxury and sports car manufacturer renowned for producing high-performance vehicles. Founded in 1931 by Ferdinand Porsche, the company is best known for its iconic Porsche 911, a car that has become a symbol of precision engineering and timeless design", path: "https://www.loveforporsche.com/wordpress/wp-content/uploads/2019/07/porsche-718-rs60-spyder-e1564515647561.jpg" },
+        { carname: "Porsche 718", model: "Spyder", price: 92000,descripotion:"In addition to cars, Porsche has a rich history in motorsports, achieving numerous victories in events like the 24 Hours of Le Mans. The brand continues to evolve, focusing on electric mobility and sustainability, while maintaining its legacy of delivering driving excellence.", path: "https://i.pinimg.com/736x/f8/aa/f0/f8aaf09624c4b93e2bd551b3b8f15881.jpg" },
+        { carname: "Porsche Panamera", model: "4S", price: 95000,  descripotion:"Porsche is a German luxury and sports car manufacturer renowned for producing high-performance vehicles. Founded in 1931 by Ferdinand Porsche, the company is best known for its iconic Porsche 911, a car that has become a symbol of precision engineering and timeless design", path: "https://newsroom.porsche.com/.imaging/mte/porsche-templating-theme/image_1080x624/dam/Christophorus-Website/C397/Traumwagen/uns13-b.jpg/jcr:content/uns13-b.jpg" },
+        { carname: "Porsche Panamera", model: "Turbo", price: 130000, descripotion:"In addition to cars, Porsche has a rich history in motorsports, achieving numerous victories in events like the 24 Hours of Le Mans. The brand continues to evolve, focusing on electric mobility and sustainability, while maintaining its legacy of delivering driving excellence.", path: "https://w0.peakpx.com/wallpaper/149/785/HD-wallpaper-porsche-car-race-car-old-car-vehicles-coupe-yellow-car-porsche-911s.jpg" },
+        { carname: "Porsche 911", model: "Targa 4", price: 120000, descripotion:"Porsche is a German luxury and sports car manufacturer renowned for producing high-performance vehicles. Founded in 1931 by Ferdinand Porsche, the company is best known for its iconic Porsche 911, a car that has become a symbol of precision engineering and timeless design", path: "https://cdn.pixabay.com/photo/2020/10/18/16/45/porsche-5665390_1280.jpg" },
+        { carname: "Porsche 911", model: "GT2 RS", price: 300000, descripotion:"In addition to cars, Porsche has a rich history in motorsports, achieving numerous victories in events like the 24 Hours of Le Mans. The brand continues to evolve, focusing on electric mobility and sustainability, while maintaining its legacy of delivering driving excellence.", path: "https://preview.redd.it/a-few-pictures-of-my-visit-to-the-porsche-museum-in-v0-640b2br01agb1.jpg?width=640&crop=smart&auto=webp&s=1467de6298974e3c6f68dd2d460b5c0aa9f1272c" },
+    ]
+  return (
+    <div className="container-fluid cars p-5 "> 
+<div className="row">{
+    data.map((car, index) => {
+        return(
+        <div key={index} className="col-md-4 mb-5">
+            <div className="card car bg-light"  data-aos="fade-right">
+                <img className="pics" src={car.path} alt=""/>
+                <h4 className='card-title'>{car.carname}</h4><button className="btn btn-dark w-25 m-2"> View</button>
+                <h5 className='card-text'>{car.model}</h5>
+                <p className='card-text'>{car.descripotion}</p>
+                <h5 className='card-text'> Rs.{car.price}</h5>
+            </div>
+        </div>)
+    })}
+    
+</div>
+</div>
+  )
+}
+
+export default Cars
