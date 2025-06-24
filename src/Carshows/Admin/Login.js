@@ -7,7 +7,7 @@ const Login = () => {
 
   const[details,setDetails] =useState({});
 const navigate = useNavigate();
-const   [login, setLogin]= useContext(LoginStatus);
+const   [ setLogin]= useContext(LoginStatus);
 
   const ChangeData =(e)=>{
     setDetails({...details, [e.target.name]: e.target.value})
